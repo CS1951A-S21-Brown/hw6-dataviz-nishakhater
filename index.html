@@ -12,17 +12,31 @@
     <div class="header">
         <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
     </div>
-    <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
-    <div class="row">
-        <div class="col-lg-6">
-            <div id="graph1"></div>
-            <div id="graph2"></div><br/>
-        </div>
-        <div class="col-lg-6">
-            <div id="graph3"></div>
-        </div>
+    <div class="col-md-8">
+        <button type="button" class="btn btn-info" onclick="setData('rainbow')">Add Rainbow Colors!</button>
+        <button type="button" class="btn btn-info" onclick="setData('warm')">Add Warm Colors!</button>
+        <button type="button" class="btn btn-info" onclick="setData('cool')">Add Cool Colors!</button>
     </div>
-    <!--Feel free to add more JavaScript files as needed-->
-    <script type="text/javascript" src="main.js"></script>
+    <div id="graph1"></div>
+    <div id="graph2"></div>
+    <div id="graph3"></div>
+    <script type="text/javascript" src="graph1.js"></script>
+    <script type="text/javascript" src="graph2.js"></script>
+    <script type="text/javascript" src="graph3.js"></script>
+    <div class="header">
+        <h3>Written Questions</h3>
+    </div>
+    <ol>
+        <li>This pie chart outlines the number of titles per genre where the whole pie represents the total titles and each of the slices represent the percentage of the total that is made up by titles from that genre. If a viewer hovers over a particular slice, they can see the name of that genre and how many titles are in that genre. For the second question, I use a bar chart to display average runtime of movies for every year listed in the netflix dataset. For the third chart, I use a bar chart to list the top 20 director/actor pairs and how many movies they've made.</li>
+        <br>
+        <li>D3 was very helpful in providing structure to define various types of graphs easily (bar, pie, scatter, etc.) Secondly, D3 allowed me to easily set and position labels respective to the position of my graph without having to manually set and update positions of each element. Lastly, D3 has a lot of built-in color methods and functionality to help someone make their graph more clear and aesthetically pleasing through color.</li>
+        <br>
+        <li>Firstly, if someone was trying to further customize their graph by adding custom ticks for an axis, this might be a bit difficult with D3. When I was trying to change my 'year' ticks in the second graph to be a customized interval, I found it a bit difficult. A second reason why D3 would not be the best tool would be if someone was trying to create a graph type that wasn't present in D3. Some immediate types that come to mind are complex mathematical graphical models. A third situation in which D3 would not be the best tool would be if someone who was not very familiar with D3 wanted to make a very simple graph. If the person had experience with HTML/CSS/JS, they could probably create that graph in those languages faster than going through the learning curve of D3. </li>
+        <br>
+        <li>Those with generally good vision would be able to understand my graphs well. Those who are partially or fully colorblind would be able to view the hover points on my first graph to see the numbers and genres for each slice. Furthermore, those with Deuteranopia or other forms of colorblindness might benefit from the whitespace in my pie charts as well as those between the bars in my bar charts. Lastly, the color changing functionality allows those with colorblindess to select various color options. On the other hand however, those with colorblindness might have a difficult time distinguishing between certain slices in my pie chart, as some neighboring slices are similar shades. Lastly, those with impaired vision might have a difficult time reading some of my labels or counters. As mentioned in the medium article, those who use assistive technology might not be able to get information from the hover overlays in my pie chart. In order to make this dashboard more accessible, one thing I could do would be to make the hover overlays on the pie charts into labels so that those who need assistive technology are able to read these descriptions. Secondly, I could use color so that there is high contrast between each of the slices / bars in the various charts. Lastly, I could attempt to use larger labels or reduce the amount of information present at any given time by using filters in order for visually impaired people to easily view my dashboard.</li>
+        <br>
+        <li>One step I could have taken would be to increase my white border size to account for colorblind audiences so that they could notice a distinction between pie slices. However, the issue I ran into when doing this was that it would reduce the size of certain slices to be hardly visible, which would make this dashboard less accessible for other types of visually impaired audiences. This was a tradeoff I had to consider. Another step I could have taken was to add alternative text and tab-through functionality for visually impaired audiences. I did not take this step as I was not sure how to implement this functionality, but in the future I believe it would be very important to learn in order to make accessible dashboards.</li>
+    </ol>
+
 </body>
 </html>

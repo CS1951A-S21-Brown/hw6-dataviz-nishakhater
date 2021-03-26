@@ -9,4 +9,20 @@
     text-align: center;
 }
 
+.tooltip {
+    position: absolute;
+    font-size: 13px;
+    min-width: 100px;
+    padding: 10px;
+    pointer-events: none;
+    background-color: white;
+    /*font-weight: bold;*/
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button:focus {
+    outline: 0 !important;
+}
+
 /* Include any custom CSS styling here! */
