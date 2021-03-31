@@ -40,7 +40,7 @@ let title = graph1.append("text")
 
  function setData(inputColorSchema) {
 
-    d3.csv('./../data/title_genre.csv').then(function(data) {
+    d3.csv('./data/title_genre.csv').then(function(data) {
 
         let slice = d3.arc().outerRadius(graph_1_radius).innerRadius(graph_1_radius - 150);
     

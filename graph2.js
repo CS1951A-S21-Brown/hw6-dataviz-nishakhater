@@ -12,7 +12,7 @@ let svg = d3.select("#graph2")
 
 let countRef2 = svg.append("g");
 
-d3.csv('./../data/runtime_years.csv').then(function(data) {
+d3.csv('./data/runtime_years.csv').then(function(data) {
     // TODO: Clean and strip desired amount of data for barplot
     data = cleanData(data, function(a, b) { 
         bval = parseInt(b.year)

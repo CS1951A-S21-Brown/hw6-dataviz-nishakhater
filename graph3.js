@@ -11,7 +11,7 @@ let svg3 = d3.select("#graph3")
 
 let countRef3 = svg3.append("g");
 
-d3.csv('./../data/actor_director.csv').then(function(data) {
+d3.csv('./data/actor_director.csv').then(function(data) {
     data = cleanData(data, function(a, b) { 
         bval = parseInt(b.movie_count)
         aval = parseInt(a.movie_count)
